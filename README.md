@@ -44,14 +44,14 @@ cd /etc/www/projeto
 E então execute:
 
 ```
-composer require aluisio-pires/pt-br-validator
+composer require laravellegends/pt-br-validator
 ```
 
 Caso esteja utilizando uma versão desta biblioteca anterior a `5.2`, você deve o provider em `config/app.php`
 ```php
 'providers' => [
     // ... outros pacotes
-    AluisioPires\PtBrValidator\ValidatorProvider::class
+    LaravelLegends\PtBrValidator\ValidatorProvider::class
 ]
 ```
 Agora, para utilizar a validação, basta fazer o procedimento padrão do `Laravel`.
@@ -147,32 +147,32 @@ public function messages() {
 Caso tenha necessidade de acessar alguma regra separadamente, você poderá ter acesso as seguintes classes:
 
 ```
-\AluisioPires\PtBrValidator\Rules\Celular::class
-\AluisioPires\PtBrValidator\Rules\CelularComDdd::class
-\AluisioPires\PtBrValidator\Rules\CelularComCodigo::class
-\AluisioPires\PtBrValidator\Rules\Cnh::class
-\AluisioPires\PtBrValidator\Rules\Cnpj::class
-\AluisioPires\PtBrValidator\Rules\Cpf::class
-\AluisioPires\PtBrValidator\Rules\Cns::class
-\AluisioPires\PtBrValidator\Rules\FormatoCnpj::class
-\AluisioPires\PtBrValidator\Rules\FormatoCpf::class
-\AluisioPires\PtBrValidator\Rules\Telefone::class
-\AluisioPires\PtBrValidator\Rules\TelefoneComDdd::class
-\AluisioPires\PtBrValidator\Rules\TelefoneComCodigo::class
-\AluisioPires\PtBrValidator\Rules\FormatoCep::class
-\AluisioPires\PtBrValidator\Rules\FormatoPlacaDeVeiculo::class
-\AluisioPires\PtBrValidator\Rules\FormatoPis::class
-\AluisioPires\PtBrValidator\Rules\Pis::class
-\AluisioPires\PtBrValidator\Rules\CpfOuCnpj::class
-\AluisioPires\PtBrValidator\Rules\FormatoCpfOuCnpj::class
-\AluisioPires\PtBrValidator\Rules\Uf::class
+\LaravelLegends\PtBrValidator\Rules\Celular::class
+\LaravelLegends\PtBrValidator\Rules\CelularComDdd::class
+\LaravelLegends\PtBrValidator\Rules\CelularComCodigo::class
+\LaravelLegends\PtBrValidator\Rules\Cnh::class
+\LaravelLegends\PtBrValidator\Rules\Cnpj::class
+\LaravelLegends\PtBrValidator\Rules\Cpf::class
+\LaravelLegends\PtBrValidator\Rules\Cns::class
+\LaravelLegends\PtBrValidator\Rules\FormatoCnpj::class
+\LaravelLegends\PtBrValidator\Rules\FormatoCpf::class
+\LaravelLegends\PtBrValidator\Rules\Telefone::class
+\LaravelLegends\PtBrValidator\Rules\TelefoneComDdd::class
+\LaravelLegends\PtBrValidator\Rules\TelefoneComCodigo::class
+\LaravelLegends\PtBrValidator\Rules\FormatoCep::class
+\LaravelLegends\PtBrValidator\Rules\FormatoPlacaDeVeiculo::class
+\LaravelLegends\PtBrValidator\Rules\FormatoPis::class
+\LaravelLegends\PtBrValidator\Rules\Pis::class
+\LaravelLegends\PtBrValidator\Rules\CpfOuCnpj::class
+\LaravelLegends\PtBrValidator\Rules\FormatoCpfOuCnpj::class
+\LaravelLegends\PtBrValidator\Rules\Uf::class
 ```
 
-Por exemplo, se você deseja validar o formato do campo de um CPF, você pode utilizar a classe `AluisioPires\PtBrValidator\Rules\FormatoCpf` da seguinte forma:
+Por exemplo, se você deseja validar o formato do campo de um CPF, você pode utilizar a classe `LaravelLegends\PtBrValidator\Rules\FormatoCpf` da seguinte forma:
 
 ```php
 use Illuminate\Http\Request;
-use AluisioPires\PtBrValidator\Rules\FormatoCpf;
+use LaravelLegends\PtBrValidator\Rules\FormatoCpf;
 
 // testando?cpf=valor_invalido
 
@@ -204,7 +204,7 @@ Route::get('testando', function (Request $request) {
 
 ## Sugestões
 
-[Eloquent Filter](https://github.com/AluisioPires/eloquent-filter): Essa biblioteca foi desenvolvida com o propósito de criar facilmente filtros de pesquisa para APIs REST. Com esta biblioteca, você vai economizar várias linhas de códigos, bem como manter um padrão global para filtros de pesquisa em sua aplicação escrita em Laravel.
+[Eloquent Filter](https://github.com/LaravelLegends/eloquent-filter): Essa biblioteca foi desenvolvida com o propósito de criar facilmente filtros de pesquisa para APIs REST. Com esta biblioteca, você vai economizar várias linhas de códigos, bem como manter um padrão global para filtros de pesquisa em sua aplicação escrita em Laravel.
 
 
 ## Doações

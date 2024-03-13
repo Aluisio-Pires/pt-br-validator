@@ -17,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "AluisioPires\\PtBrValidator\\": "src/pt-br-validator"
+            "Aluisio-Pires\\PtBrValidator\\": "src/pt-br-validator"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "AluisioPires\\PtBrValidator\\ValidatorProvider"
+                "Aluisio-Pires\\PtBrValidator\\ValidatorProvider"
             ]
         }
     },

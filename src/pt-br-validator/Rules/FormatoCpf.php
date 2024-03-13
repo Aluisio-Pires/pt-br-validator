@@ -1,6 +1,6 @@
 <?php
 
-namespace AluisioPires\PtBrValidator\Rules;
+namespace LaravelLegends\PtBrValidator\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
