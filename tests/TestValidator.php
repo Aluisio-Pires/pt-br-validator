@@ -1,13 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Validator;
-use LaravelLegends\PtBrValidatorValidator;
+use AluisioPires\PtBrValidatorValidator;
 
 class TestValidator extends Orchestra\Testbench\TestCase
 {
     protected function getPackageProviders($app)
     {
-        return [LaravelLegends\PtBrValidator\ValidatorProvider::class];
+        return [AluisioPires\PtBrValidator\ValidatorProvider::class];
     }
 
     public function testTelefoneComDdd()
@@ -166,7 +166,7 @@ class TestValidator extends Orchestra\Testbench\TestCase
         $this->assertTrue($incorrect->fails());
 
 
-        // Correção do ISSUE: https://github.com/LaravelLegends/pt-br-validator/issues/4
+        // Correção do ISSUE: https://github.com/AluisioPires/pt-br-validator/issues/4
 
         $repeats = [
             '00.000.000/0000-00',
