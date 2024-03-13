@@ -1,11 +1,15 @@
 {
-    "name": "laravellegends/pt-br-validator",
+    "name": "aluisio-pires/pt-br-validator",
     "description": "Uma biblioteca contendo validações de formatos Brasileiros, para o Laravel",
     "license": "MIT",
     "authors": [
         {
             "name": "Wallace de Souza Vizerra",
             "email": "wallacemaxters@gmail.com"
+        },
+        {
+            "name": "Aluisio Pires",
+            "email": "aluisiopireseng@gmail.com"
         }
     ],
     "require": {
@@ -13,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelLegends\\PtBrValidator\\": "src/pt-br-validator"
+            "Aluisio-Pires\\PtBrValidator\\": "src/pt-br-validator"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelLegends\\PtBrValidator\\ValidatorProvider"
+                "Aluisio-Pires\\PtBrValidator\\ValidatorProvider"
             ]
         }
     },
